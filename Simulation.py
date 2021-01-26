@@ -124,7 +124,8 @@ class Simulation:
         return infected["infected"].idxmax()
 
     @classmethod
-    def averaged_chart(cls, settngs, NumberOfSimulations):
+    def averaged_chart(cls, settings, NumberOfSimulations):
+        settngs = Settings()
         g = Simulation(settngs)
         g.run()
         df = g.__get_df()
