@@ -270,7 +270,7 @@ class Simulation:
                                      self.setngs.b_recov])[0]
 
 
-s = Settings(m=40, n=25, r=2, k=4, N=200)
+s = Settings(m=40, n=25, r=2, k=4, N=150)
 sim = Simulation(s)
 sim.run()
 sim.plot_state(0)  # assumed first day is 0
